@@ -1,0 +1,301 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\CChessUI.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 230, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于..."
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "中国象棋对弈程序",IDC_STATIC,56,17,97,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,91,37,119,8
+    DEFPUSHBUTTON   "确定",IDOK,171,22,50,16,WS_GROUP
+    LTEXT           "03计算机科技小组",IDC_STATIC,91,28,75,11
+    ICON            IDR_MAINFRAME,IDC_STATIC,28,18,20,20
+    LTEXT           "小组成员：  孙忱、周俊、施聪聪、周理想",IDC_STATIC,28,65,185,11
+    LTEXT           "指导老师：  陈宇、蒋德茂  （计算机学院）",IDC_STATIC,28,52,166,10
+    LTEXT           "鸣谢：",IDC_STATIC,28,93,27,10
+    LTEXT           "唐自立老师、王红玲老师 （计算机学院）",IDC_STATIC,60,93,133,10
+    LTEXT           "游有根老师（文正学院）",IDC_STATIC,60,105,160,10
+    LTEXT           "刘佳、王婧、倪郡阳、陆叶 （文正科协）",IDC_STATIC,60,129,134,10
+    LTEXT           "王立老师 （文正科协）",IDC_STATIC,60,117,121,9
+END
+
+IDD_CCHESSUI_DIALOG DIALOGEX 0, 0, 418, 348
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "中国象棋——03计算机科技小组"
+MENU IDR_MAINMENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LISTCCHESS,321,5,89,134,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,320,150,91,104
+    LTEXT           "红方用时",IDC_STATIC,325,163,76,8
+    LTEXT           "黑方用时",IDC_STATIC,326,208,78,8
+    PUSHBUTTON      "悔棋",IDC_BUTTON1,317,292,42,17
+    PUSHBUTTON      "还原",IDC_BUTTON2,369,291,42,17
+    PUSHBUTTON      "退出",IDC_BUTTON3,340,322,45,17
+    PUSHBUTTON      "新局",IDC_BUTTON4,339,264,45,17
+    LTEXT           "00:00:00",IDC_STATIC3,351,177,53,22
+    LTEXT           "00:00:00",IDC_STATIC4,351,221,51,31
+    EDITTEXT        IDC_EDIT1,1,0,252,339,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_SET DIALOGEX 0, 0, 186, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "引擎设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "设置搜索深度（层数）",IDC_STATIC,24,18,87,18
+    EDITTEXT        IDC_EDITDepth,34,35,63,17,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | WS_TABSTOP,97,35,9,16,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "确定",IDOK,129,46,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,129,64,50,14,NOT WS_TABSTOP
+    LTEXT           "层数越大电脑棋力越高，但花费时间也更长",IDC_STATIC,41,60,80,20
+    LTEXT           "提示：",IDC_STATIC,15,60,26,12
+    LTEXT           "建议一般家用电脑该值不要大于5",IDC_STATIC,15,81,125,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "03计算机系科技小组"
+            VALUE "FileDescription", "中国象棋对弈程序"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Chinese Chess"
+            VALUE "LegalCopyright", "Copyright 2006"
+            VALUE "OriginalFilename", "CChessUI.exe"
+            VALUE "ProductName", "中国象棋对弈程序"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 11
+        RIGHTMARGIN, 223
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_CCHESSUI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 411
+        BOTTOMMARGIN, 339
+    END
+
+    IDD_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU 
+BEGIN
+    POPUP "游戏(&G)"
+    BEGIN
+        MENUITEM "新游戏\tCtrl+N",                 ID_NewGame
+        MENUITEM SEPARATOR
+        MENUITEM "退出\tCtrl+Q",                  32819
+    END
+    POPUP "外观(&V)"
+    BEGIN
+        POPUP "棋盘样式"
+        BEGIN
+            MENUITEM "石棋盘",                         ID_st_Qipan
+            MENUITEM "水晶棋盘",                        ID_sj_Qipan
+            MENUITEM "木棋盘",                         ID_mt_Qipan
+        END
+        POPUP "棋子样式"
+        BEGIN
+            MENUITEM "石棋子",                         ID_st_Qizi
+            MENUITEM "水晶棋子",                        ID_sj_Qizi
+            MENUITEM "木棋子",                         ID_mt_Qizi
+        END
+    END
+    POPUP "模式(&M)"
+    BEGIN
+        MENUITEM "普通模式",                        ID_Normal
+        MENUITEM "盲棋模式",                        ID_Blind
+    END
+    POPUP "引擎(&E)"
+    BEGIN
+        MENUITEM "引擎设置(&S)",                    ID_SetE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 中国象棋(&A)...",              ID_About
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "N",            ID_NewGame,             VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_Quit,                VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MTQP                BITMAP                  "res\\Pic\\qipan\\mutou\\qipan.bmp"
+IDB_STQP                BITMAP                  "res\\Pic\\qipan\\shitou\\qipan.bmp"
+IDB_SJQP                BITMAP                  "res\\Pic\\qipan\\shuijing\\qipan.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CChessUI(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\CChessUI.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

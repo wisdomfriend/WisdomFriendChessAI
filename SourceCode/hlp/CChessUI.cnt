@@ -1,0 +1,3 @@
+:Base CChessUI.hlp
+1 <<在此处添加应用程序特定的主题>>
+2 <<在此处添加主题跳转>>=HIDD_CCHESSUI_DIALOG

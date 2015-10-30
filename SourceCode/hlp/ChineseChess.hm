@@ -1,0 +1,31 @@
+ 
+// 命令(ID_* 和 IDM_*) 
+HIDM_ABOUTBOX                           0x10010
+HID_32771                               0x18003
+HID_Menu                                0x18004
+HID_32773                               0x18005
+HID_32774                               0x18006
+HID_32775                               0x18007
+HID_32776                               0x18008
+HID_32777                               0x18009
+HID_32778                               0x1800A
+HID_32779                               0x1800B
+HID_32780                               0x1800C
+HID_32781                               0x1800D
+HID_32782                               0x1800E
+HID_32783                               0x1800F
+HID_32784                               0x18010
+HID_32785                               0x18011
+HID_32786                               0x18012
+ 
+// 提示(IDP_*) 
+ 
+// 资源(IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_MAINMENU                           0x20081
+ 
+// 对话框(IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_CCHESSUI_DIALOG                    0x20066
+ 
+// 框架控件(IDW_*) 

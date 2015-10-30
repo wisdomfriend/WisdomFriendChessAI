@@ -1,0 +1,48 @@
+ 
+// 命令(ID_* 和 IDM_*) 
+HIDM_ABOUTBOX                           0x10010
+HID_Menu                                0x18004
+HID_32773                               0x18005
+HID_32774                               0x18006
+HID_32775                               0x18007
+HID_32778                               0x1800A
+HID_32779                               0x1800B
+HID_32781                               0x1800D
+HID_32784                               0x18010
+HID_32785                               0x18011
+HID_32786                               0x18012
+HID_NewGame                             0x1801A
+HID_Game                                0x1801C
+HID_View                                0x1801D
+HID_Mode                                0x1801E
+HID_Engine                              0x1801F
+HID_Help                                0x18020
+HID_About                               0x18021
+HID_Subject                             0x18022
+HID_SetE                                0x18023
+HID_Normal                              0x18024
+HID_Blind                               0x18025
+HID_qinpan                              0x18026
+HID_Qinpan                              0x18027
+HID_Qizi                                0x18028
+HID_st_Qizi                             0x18029
+HID_sj_Qizi                             0x1802A
+HID_mt_Qizi                             0x1802B
+HID_st_Qipan                            0x1802C
+HID_sj_Qipan                            0x1802D
+HID_mt_Qipan                            0x1802E
+HID_Quit                                0x18033
+ 
+// 提示(IDP_*) 
+ 
+// 资源(IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_MAINMENU                           0x20081
+HIDR_ACCELERATOR1                       0x20087
+ 
+// 对话框(IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_CCHESSUI_DIALOG                    0x20066
+HIDD_SET                                0x20086
+ 
+// 框架控件(IDW_*) 
